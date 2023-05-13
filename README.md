@@ -9,6 +9,9 @@ Logs journalctl to Discord using webhooks
 * (optional) [pm2](https://pm2.keymetrics.io/)
 
 ## Installation
+`curl -s https://raw.githubusercontent.com/LenofagIndustries/journalctl.log/main/install.sh | sh`
+
+Or
 1. `git clone https://github.com/LenofagIndustries/journalctl.log`
 2. `cd journalctl.log`
 3. `npm install`
