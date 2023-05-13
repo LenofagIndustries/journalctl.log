@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if ! type node > /dev/null 2>&1 then
+if ! type node > /dev/null 2>&1; then
     echo "Node.js is not installed!"
     exit 2
 fi
 
-if ! type git > /dev/null 2>&1 then
+if ! type git > /dev/null 2>&1; then
     echo "git is not installed!"
     exit 2
 fi
@@ -13,7 +13,7 @@ fi
 echo "Cloning repository..."
 
 git clone https://github.com/LenofagIndustries/journalctl.log
-if ! -d journalctl.log then
+if ! [ -d journalctl.log ]; then
     echo "Failed to clone repository!"
     exit 1
 fi
