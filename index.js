@@ -46,7 +46,7 @@ journalctl.on("event", data => {
                     headers: {
                         "Priority": "4",
                         "Tags": "computer",
-                        "Title": `Successfull SSH login at ${config.ntfy.hostname}`,
+                        "Title": `Successful SSH login at ${config.ntfy.hostname}`,
                         "Authorization": `Basic ${btoa(`${config.ntfy.user}:${config.ntfy.password}`)}`
                     }
                 }).catch(err => console.log(`journalctl.log: error sending to ntfy: ${err}`))
